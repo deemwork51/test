@@ -20,38 +20,13 @@ db.connect(function (err) {
   console.log("Connected to Mysql!");
 });
 
-// db.connect(function(err) {
-//     if (err) throw err;
-//     console.log("Connected!");
-//     var sql = "CREATE TABLE todo (id int(16) auto_increment,name VARCHAR(255) NOT NULL, sequence int(16) NOT NULL,PRIMARY KEY(id))";
-//     //var sql = "ALTER TABLE users ADD noOfOrders Int(16)";
-//     //var sql = "UPDATE users SET noOfOrders="+0;
-//     db.query(sql, function (err, result) {
-//       if (err) throw err;
-//       console.log("Table created");
-//     });
-//   });
 
 
-// db.connect(function(err) {
-//     if (err) throw err;
-//     console.log("Connected!");
-//     var sql = "CREATE TABLE usersLogin (orderId int(16) auto_increment,id int(16),subtotal int(32), date VARCHAR(255), PRIMARY KEY (orderId), FOREIGN KEY(id) REFERENCES users(id))";
-//     db.query(sql, function (err, result) {
-//       if (err) throw err;
-//       console.log("Table created");
-//     });
-//   });
-
-//register module\
-
-var login = function (username, password, res) {
-  
+var login = function (username, password, res) {  
   var sql = "SELECT * FROM user where username='" + username+"'"
   db.query(sql, function (err, response) {
     if (err) {
       res.status(500).send({ message: err })
-
     }
     else {
       if (response.length > 0) {
@@ -144,8 +119,7 @@ var getTodo=function(res){
          }
         else{
           res.status(200).send({response})
-        } 
-      
+        }      
     }
     else{
       res.status(500).send({message:err})  
@@ -198,7 +172,7 @@ var reorderTodo=function(fromId,toId,res){
     }
  ], function(err) {
       if (err) 
-      res.send('ok ')
+      res.status(500).send('ok  ')
       
  });
  }
