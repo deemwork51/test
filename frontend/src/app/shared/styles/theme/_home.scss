@@ -1,0 +1,103 @@
+.component-Home{
+    border: 6px solid slategrey;
+    max-width: 900px;
+    margin: 54px 20px 0px 179px;
+    height: 700px;
+    padding: 16px 26px 20px;
+    h4{
+        color: #e23636;
+    margin-left: 260px;
+    font-size: x-large;
+    font-weight: bold;
+    }
+    .box_content{              
+                ul{
+                    margin-top: 10px;
+                    margin-bottom: 20px;                    
+                    &.dutyStatusList{
+                        margin-bottom: 0px;
+                    }
+                    .form-group{
+                        .listTypeName{
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+
+
+    
+   
+}
+
+.processDragList{
+    list-style: none;
+    cursor: move;
+    &.dragHelper{
+        background: $gray-f8f9;
+    }
+    .listTypeName{
+        @include flexbox;
+        @include align-items (center);
+        margin-bottom: 15px;
+        .name{
+            border: 1px solid $gray-300;
+            height: 45px;
+            width: 76%;
+            margin-right: 15px;
+            @include flexbox;
+            @include align-items (center);
+            span{
+                padding: 0 15px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &:hover{
+                background: $gray-f8f9;
+                cursor: text;
+            }
+        }
+        span.btn{
+            color: $blue;
+            margin: 0 10px;     
+            cursor: pointer;                          
+            &.update-btn{
+                color: $blue;
+            }
+            &.delete-btn, &[title="cancel"]{
+                color: $pink;
+            }
+        }
+    }
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    input{
+        width: 100%;
+        font-size: 16px;
+        color:$theme-cc;
+        text-align: left;
+        height: 43px;
+        border: none;
+        background: none;
+        padding: 0 15px;
+        background: $gray-f8f9;
+        @include input-placeholder{
+            opacity: 0.5;
+        }
+    }
+    button{
+        background: none;
+        border: none;
+        outline: none;
+        color: $blue;
+        margin: 0 9px;
+        padding: 0;
+        &.update-btn{
+            color: $blue;
+        }
+        &.delete-btn{
+            color: $pink;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+
+
+* {
+    font-family: sans-serif;
+}
+
+
+
+.component-register{
+    width: 100%;
+    background-image: url('../../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    margin-Top:-94px;
+    position: absolute;
+    @media only screen and (min-width: 360px) {
+    margin-Top:0px;
+       
+      }
+      
+    //background-color: grey;
+    ////margin: 6% auto;
+    ///padding: 11px
+}
+.form-box{
+    background-color: white;
+    width: 380px;
+    height: 480px;
+    margin:10% auto;
+    padding:5px;
+    position: relative;
+    overflow: hidden;
+
+    //margin:10px 12px 10px;
+
+}
+.button-box{
+    width:220px;
+    height:50px;
+    margin:35px auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 9px #ff61241f;
+    position: relative;
+}
+.toggle-btn{
+    cursor: pointer;
+    padding: 15px 28px;
+    position: relative;
+    background: transparent;
+    border: 0;
+    border:none;
+    outline:none
+}
+
+#btn{
+    top:0;
+    left:0;
+    width:110px;
+    height:100%;
+    position: absolute;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icon{
+    text-align: center;
+    column-gap: 40px;
+    img{
+        width: 30px;
+        margin:0px 5px;
+        border-radius: 16px;
+  }
+}
+.form-group{
+    padding: 15px 48px 20px;
+    transition: .5s;
+    //position:absolute;
+    input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #999;
+        width: 250px;
+        font-size: 16px;
+        background: transparent;
+        position: relative;
+        @include input-placeholder {
+            color: $gray-700;
+            opacity: 1;
+        }
+        &:focus{
+            input-placeholder {
+                color:transparent;
+                opacity: 0;
+            }
+        }
+    }
+}
+.check-box{
+    padding: 0px 41px;
+    width: 335px;
+}
+span{
+    color:#777;
+    font-size: 16px;
+    
+}
+.button-sbt{
+    width: 197px;
+    height: 43px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 23px 84px;
+    padding:11px;
+    border: 1px solid black;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border:none;
+    outline:none;
+    button{
+        background-color: transparent;
+       border: none;
+       font-size: 15px;
+    }
+}
+#login{
+    left:50px
+}
+#register{
+    margin:-380px 357px;
+}

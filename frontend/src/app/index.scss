@@ -1,0 +1,18 @@
+
+@import "./shared/scss/bootstrap-grid";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+// Bootstrap scss
+
+
+@import "./shared/scss/mixins";
+@import "./shared/styles/theme/mixin-theme";
+/* Theme styles Sheet */
+
+
+
+
+@import "./shared/styles/theme/comman";
+@import "./shared/styles/theme/login";
+@import "./shared/styles/theme/home";
+@import "./shared/styles/theme/register";

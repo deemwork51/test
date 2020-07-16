@@ -1,0 +1,12 @@
+.content-container{
+  width: calc(100% - 200px);
+  float: right; 
+  min-height: 133vh;
+  background-color: gray;
+  &.full-width-content{
+    width: 100%;
+    background-color: white;
+  }
+}
+
+

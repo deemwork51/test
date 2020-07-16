@@ -1,0 +1,109 @@
+.top-header-link {
+    @include fontSize(14px);
+    color: $gray-800;
+    text-align: right;
+    padding: 30px;
+    @media (max-width: 1400px) {
+        padding: 30px 30px 0px;
+    }
+    a{
+        font-weight: bold;
+        color: $gray-800;
+    }
+}
+
+.component-Login{
+    .wrapper{
+        margin:auto;
+        max-width: 450px;
+        
+       
+    }
+    .logo{
+        text-align: center;
+        img{
+            max-width:300px;
+        }
+        
+    }
+    .page-heading{
+        @include fontSize(24px);
+        text-align:center;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0px;
+        padding: 10px 20px 20px;
+    } 
+    .option-text{
+    
+        @include fontSize(14px);
+        color: $gray-700;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding:0px 0px 30px;
+        text-align: center;
+        margin: 0px;
+    }
+    form{
+        margin-top: 20px;
+        .form-input{
+            margin-bottom: 20px;
+            input{
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid $gray-400;
+                height: 50px;
+                @include fontSize(18px);
+                font-weight: 300;
+                outline: none;
+                @include input-placeholder {
+                    color: $gray-700;
+                    opacity: 1;
+                }
+                &:focus{
+                    input-placeholder {
+                        color:transparent;
+                        opacity: 0;
+                    }
+                }
+            }
+           
+        }
+        .form-bottom{
+            margin: 20px 0px;
+            display: inline-block;
+            width: 100%;
+            p{
+                width: 100%;
+                text-align: center;
+               .forgot-pswd{
+                @include fontSize(12px);
+                color: $gray-700;
+                border-bottom: 1px solid $gray-800;
+                padding: 10px 0px;
+                padding: 8px 0px;
+                float: none;
+               }
+               input[type="submit"], input[type="button"]{
+                   float: right;
+                   background-color: $gray-900;
+                   border-radius: 100px;
+                   color: $white;
+                   border: none;
+                   width: 150px;
+                   height: 40px;
+                   cursor: pointer;
+                   float: none;
+                   display: block;
+                   margin: auto;
+                   outline: none;
+                   &:hover{
+                       background-color: $black;
+                   }
+               }
+            }
+        }
+    }
+   
+        
+}
