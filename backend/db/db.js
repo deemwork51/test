@@ -201,28 +201,7 @@ var reorderTodo=function(fromId,toId,res){
       res.send('ok ')
       
  });
-  
-  // db.query(sql,function(err,response){
-  //   fromSequence=response[0].sequence
-  //   var sql2 = "UPDATE todo SET sequence='"+fromSequence+"'where id="+toId
-  //   db.query(sql2,function(err,response){
-      
-  //     db.query(sql1,function(err,response){
-  //       toSequence=JSON.stringify(response)[0].sequence
-  //       var sql3 = "UPDATE todo SET sequence='"+toSequence+"'where id="+fromId
-  //     db.query(sql3,function(err,response){
-        
-  //         res.send('ok')
-  //       })
-  //       })
-  //     })
-  //   })
-
-    
-
-     
-    
-}
+ }
 
 exports.register=register;
 exports.login = login;
