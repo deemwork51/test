@@ -1,6 +1,5 @@
 var express=require('express');
 var cors=require('cors')
-// var route = require('./route');
 var db=require('./db/db')
 var bodyParser = require('body-parser')
 var app=express();

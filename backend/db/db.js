@@ -1,10 +1,8 @@
 var mysql = require('mysql');
-
-
 var async= require('async');
 var bycrypt=require('bcryptjs')
 var jwt = require('jsonwebtoken');
-const { Console } = require('console');
+
 
 
 //connection to mysql
